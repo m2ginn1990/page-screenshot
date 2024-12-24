@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Screenshot Timeline",
+  "version": "1.0",
+  "description": "Take screenshots and display them as thumbnails in a timeline.",
+  "permissions": ["activeTab", "tabs", "scripting", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["timeline.css"]
+    }
+  ]
+}
+
+
+  
+  
+  

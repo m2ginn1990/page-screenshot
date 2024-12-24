@@ -1,0 +1,70 @@
+#screenshot-timeline {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    overflow-x: auto;
+    background-color: white;
+    border-top: 1px solid #d3d3d3;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10000;
+    box-sizing: border-box;
+}
+
+/* Thumbnail container */
+.thumbnail-container {
+    display: flex;
+    flex-direction: column; /* Stack label and thumbnail vertically */
+    align-items: center;
+    gap: 4px; /* Space between label and thumbnail */
+    text-align: center;
+}
+
+/* Thumbnail image */
+.thumbnail {
+    width: 100%;
+    max-width: 80px; /* Adjust as needed */
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Thumbnail label */
+.thumbnail-label {
+    font-size: 10px;
+    color: black;
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    cursor: pointer;
+    width: 100%; /* Match thumbnail width */
+    text-align: center; /* Center-align the text */
+}
+
+
+#screenshot-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 10001;
+}
+
+#screenshot-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+  
+  
